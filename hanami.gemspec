@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     spec.files << "dic/#{dicdir}"
     ['AUTHORS','char.bin','COPYING','dicrc','matrix.bin','sys.dic','unk.dic','version'].each do |dicfile|
       file = "dic/#{dicdir}/#{dicfile}"
-      if !File.exists?(file)
+      if !File.exist?(file)
         puts "Make sure you extract the dictionary files in ./dic/dic.tar.gz first!"
         exit
       end
